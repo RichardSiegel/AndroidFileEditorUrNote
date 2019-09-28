@@ -3,6 +3,8 @@
 and external android storage with apps designed in Android Studio.
 If you need to add a very simple file explorer to your App, you are free to base it on UrNote.</p>
 
+<p>To learn more about the theory behind storage management in Android have a look at this <a href="http://richard.siegel.work/documents/Android-Storage.pdf">seminar paper</a>, which also mentions design patterns you may want to use in your app.</p>
+
 <p>The images below show the UrNote FileEditor, renaming a file with UrNote, an overview of file system access points, the text editor and image viewer all as available in the app.</p>
 
 <img
