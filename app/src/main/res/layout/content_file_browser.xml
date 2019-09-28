@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="de.tu_chemnitz.mi.android2.urnote.FileBrowser"
+    tools:showIn="@layout/app_bar_file_browser"
+    android:background="@drawable/side_nav_bar"
+    android:onClick="onClickBackground">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textViewURI"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/you_must_select_a_drive"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:layout_margin="5dp"/>
+
+        <ListView
+            android:layout_weight="1"
+            android:id="@+id/list_of_files"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/gray"/>
+
+        <Button
+            android:id="@+id/saveBtn"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/colorPrimary"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/btn_height"
+            android:text="@string/save_file"
+            android:visibility="invisible"
+            android:onClick="onClickSave"/>
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

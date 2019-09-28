@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_appInternalFiles"
+            android:icon="@drawable/ic_android"
+            android:title="App-Internal-Files" />
+        <item
+            android:id="@+id/nav_sdCard"
+            android:icon="@drawable/ic_sd_storage"
+            android:title="SD-Card" />
+        <item
+            android:id="@+id/nav_usb"
+            android:icon="@drawable/ic_usb"
+            android:title="USB-Storage" />
+    </group>
+
+    <item android:title="Libraries">
+        <menu>
+            <item
+                android:id="@+id/nav_images"
+                android:icon="@drawable/ic_menu_gallery"
+                android:title="Images" />
+            <item
+                android:id="@+id/nav_music"
+                android:icon="@drawable/ic_library_music"
+                android:title="Music" />
+            <item
+                android:id="@+id/nav_docs"
+                android:icon="@drawable/ic_insert_drive_file"
+                android:title="Documents" />
+            <item
+                android:id="@+id/nav_downloads"
+                android:icon="@drawable/ic_file_download"
+                android:title="Downloads" />
+        </menu>
+    </item>
+
+</menu>
